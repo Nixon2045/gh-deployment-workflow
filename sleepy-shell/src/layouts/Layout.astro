@@ -14,12 +14,12 @@ const { title } = Astro.props;
   <body>
     <header>
       <nav>
-        <a href="/">Inicio</a> |
-        <a href="about">Sobre mí</a> |
-        <a href="experience">Experiencia</a> |
-        <a href="education">Educación</a> |
-        <a href="certifications">Certificaciones</a> |
-        <a href="contact">Contacto</a>
+        <a href={`${import.meta.env.BASE_URL}`}>Inicio</a> |
+        <a href={`${import.meta.env.BASE_URL}about/`}>Sobre mí</a> |
+        <a href={`${import.meta.env.BASE_URL}experience/`}>Experiencia</a> |
+        <a href={`${import.meta.env.BASE_URL}education/`}>Educación</a> |
+        <a href={`${import.meta.env.BASE_URL}certifications/`}>Certificaciones</a> |
+        <a href={`${import.meta.env.BASE_URL}contact/`}>Contacto</a>
       </nav>
     </header>
 
