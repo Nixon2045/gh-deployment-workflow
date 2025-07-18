@@ -1,19 +1,9 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import { Head, Html } from 'astro/components';
+import Layout from 'astrowind/src/layouts/MainLayout.astro';
 ---
 
-<Layout title="Nixon Betancour - Portfolio">
-  <section class="hero">
-    <h1>Nixon Betancour</h1>
-    <p>IT Analyst L2 | Network Infrastructure | Cloud Technical Support</p>
-    <p>Passionate about Evolution to the Cloud and Driving Efficiency and Excellence in Technology Operations.</p>
-  </section>
-
-  <section class="quick-links">
-    <a href={`${import.meta.env.BASE_URL}about/`}>Sobre mí</a>
-    <a href={`${import.meta.env.BASE_URL}experience/`}>Experiencia</a>
-    <a href={`${import.meta.env.BASE_URL}education/`}>Educación</a>
-    <a href={`${import.meta.env.BASE_URL}certifications/`}>Certificaciones</a>
-    <a href={`${import.meta.env.BASE_URL}contact/`}>Contacto</a>
-  </section>
+<Layout>
+  <h1 class="text-4xl font-bold">¡Hola desde Astrowind!</h1>
+  <p>Bienvenido a tu nuevo portfolio con Astrowind 🎉</p>
 </Layout>
